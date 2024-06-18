@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.curved-underline::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	height: 20px;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M10,10 Q50,-10 90,10" stroke="white" stroke-width="2" fill="none"/></svg>')
+		no-repeat center;
+	background-size: 100% 100%;
+}
+
+:root {
+	@apply min-h-screen max-w-7xl m-auto;
+}
