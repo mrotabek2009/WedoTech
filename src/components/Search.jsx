@@ -18,7 +18,10 @@ const Search = () => {
 
 	return (
 		<div>
-			<form className='flex items-center gap-3' onSubmit={handleSubmit}>
+			<form
+				className='flex flex-col items-center gap-3'
+				onSubmit={handleSubmit}
+			>
 				<input
 					type='text'
 					placeholder='Search products...'
@@ -26,7 +29,10 @@ const Search = () => {
 					value={value}
 					onChange={handleChange}
 				/>
-				<Button type='submit' classNames='h-11 flex items-center'>
+				<Button
+					type='submit'
+					classNames='h-11 w-full flex justify-center lg:w-auto flex items-center'
+				>
 					Search
 				</Button>
 			</form>
