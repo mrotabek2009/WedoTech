@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { useEffect, useState } from 'react'
 import ProductCard from './components/Card'
 import Hero from './components/Hero'
@@ -55,6 +56,7 @@ const App = () => {
 	return (
 		<>
 			<div className='min-h-screen max-w-7xl m-auto px-16 py-10'>
+				<Analytics />
 				<Navbar />
 				<Hero />
 				<h1 className='text-2xl lg:text-3xl xl:text-5xl font-bold text-center mb-10'>
