@@ -52,6 +52,10 @@ const Categories = () => {
 		return <div className='text-center text-red-500'>{error}</div>
 	}
 
+	function capitalizeFirstLetter(string) {
+		return string.charAt(0).toUpperCase() + string.slice(1)
+	}
+
 	return (
 		<div>
 			<div className='container px-16 py-10'>
@@ -68,7 +72,7 @@ const Categories = () => {
 								className='mb-2 w-full rounded-md p-5 bg-black/30 hover:bg-black/50 transition-all'
 								to={`/categories/${category}`}
 							>
-								<h3 className='text-2xl'>{category}</h3>
+								<h3 className='text-2xl'>{capitalizeFirstLetter(category)}</h3>
 							</Link>
 						</div>
 					))
