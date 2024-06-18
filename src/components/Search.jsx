@@ -19,7 +19,7 @@ const Search = () => {
 	return (
 		<div>
 			<form
-				className='flex flex-col items-center gap-3'
+				className='flex flex-col lg:flex-row items-center gap-3'
 				onSubmit={handleSubmit}
 			>
 				<input
